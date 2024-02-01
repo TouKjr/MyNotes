@@ -1,1 +1,2 @@
 # MyNotes
+Base notes application
