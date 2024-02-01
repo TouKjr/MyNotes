@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258D3E7D2B6C3C82007B3631 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258D3E7C2B6C3C82007B3631 /* NoteView.swift */; };
 		25A3B4CF2B6B8EAF003D31C1 /* MyNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B4CE2B6B8EAF003D31C1 /* MyNotesApp.swift */; };
 		25A3B4D32B6B8EB1003D31C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4D22B6B8EB1003D31C1 /* Assets.xcassets */; };
 		25A3B4D62B6B8EB1003D31C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4D52B6B8EB1003D31C1 /* Preview Assets.xcassets */; };
@@ -28,9 +29,13 @@
 		25A3B5042B6B9C04003D31C1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F72B6B9C04003D31C1 /* Roboto-Thin.ttf */; };
 		25A3B5052B6B9C04003D31C1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F82B6B9C04003D31C1 /* Roboto-Black.ttf */; };
 		25A3B5082B6BA2B4003D31C1 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B5072B6BA2B4003D31C1 /* MainScreenViewModel.swift */; };
+		25A3B50C2B6BAF2A003D31C1 /* NoteRowRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B50B2B6BAF0F003D31C1 /* NoteRowRealm.swift */; };
+		25A3B50D2B6BAF2C003D31C1 /* NotesRowsRealmGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B50A2B6BAF0F003D31C1 /* NotesRowsRealmGroup.swift */; };
+		25A3B5132B6BD24D003D31C1 /*  AlertWithTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B5122B6BD24D003D31C1 /*  AlertWithTF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		258D3E7C2B6C3C82007B3631 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		25A3B4CB2B6B8EAF003D31C1 /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A3B4CE2B6B8EAF003D31C1 /* MyNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesApp.swift; sourceTree = "<group>"; };
 		25A3B4D22B6B8EB1003D31C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 		25A3B4F82B6B9C04003D31C1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		25A3B5062B6B9D3C003D31C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		25A3B5072B6BA2B4003D31C1 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		25A3B50A2B6BAF0F003D31C1 /* NotesRowsRealmGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRowsRealmGroup.swift; sourceTree = "<group>"; };
+		25A3B50B2B6BAF0F003D31C1 /* NoteRowRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowRealm.swift; sourceTree = "<group>"; };
+		25A3B5122B6BD24D003D31C1 /*  AlertWithTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AlertWithTF.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 		25A3B4CD2B6B8EAF003D31C1 /* MyNotes */ = {
 			isa = PBXGroup;
 			children = (
+				25A3B50F2B6BD1E3003D31C1 /* ViewsUtilities */,
 				25A3B5062B6B9D3C003D31C1 /* Info.plist */,
 				25A3B4E82B6B9A8E003D31C1 /* Fonts */,
 				25A3B4DE2B6B92F7003D31C1 /* ViewModels */,
@@ -119,6 +128,7 @@
 			children = (
 				25A3B4DF2B6B934E003D31C1 /* MainScreenView.swift */,
 				25A3B4E12B6B9372003D31C1 /* NoteRowView.swift */,
+				258D3E7C2B6C3C82007B3631 /* NoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,8 +172,18 @@
 		25A3B5092B6BA2CE003D31C1 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				25A3B50B2B6BAF0F003D31C1 /* NoteRowRealm.swift */,
+				25A3B50A2B6BAF0F003D31C1 /* NotesRowsRealmGroup.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		25A3B50F2B6BD1E3003D31C1 /* ViewsUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				25A3B5122B6BD24D003D31C1 /*  AlertWithTF.swift */,
+			);
+			path = ViewsUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,10 +276,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A3B4FB2B6B9C04003D31C1 /* RobotoFontConstants.swift in Sources */,
+				25A3B50C2B6BAF2A003D31C1 /* NoteRowRealm.swift in Sources */,
+				25A3B50D2B6BAF2C003D31C1 /* NotesRowsRealmGroup.swift in Sources */,
 				25A3B4E22B6B9372003D31C1 /* NoteRowView.swift in Sources */,
 				25A3B4E02B6B934E003D31C1 /* MainScreenView.swift in Sources */,
 				25A3B4CF2B6B8EAF003D31C1 /* MyNotesApp.swift in Sources */,
+				25A3B5132B6BD24D003D31C1 /*  AlertWithTF.swift in Sources */,
 				25A3B5082B6BA2B4003D31C1 /* MainScreenViewModel.swift in Sources */,
+				258D3E7D2B6C3C82007B3631 /* NoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

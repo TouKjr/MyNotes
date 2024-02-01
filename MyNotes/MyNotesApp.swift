@@ -12,6 +12,7 @@ struct MyNotesApp: App {
     var body: some Scene {
         WindowGroup {
             MainScreenView()
+                .environmentObject(MainScreenViewModel())
         }
     }
 }

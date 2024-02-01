@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct NoteRowView: View, Identifiable  {
     
-    @State var noteLabel: String
-    @State var noteDescription: String?
+    @ObservedRealmObject var currentNote: NoteRowRealm
     
     private let width = UIScreen.main.bounds.width
     private let height = UIScreen.main.bounds.height
@@ -26,13 +26,13 @@ struct NoteRowView: View, Identifiable  {
             VStack(alignment: .leading){
                 
                 HStack{
-                    Text(noteLabel)
+                    Text(currentNote.noteLabel)
                         .font(.custom(RobotoFontConstants.RobotoMedium, size: 15, relativeTo: .title3))
                     Spacer()
                 }
                 
                 HStack{
-                    Text(noteDescription ?? "")
+                    Text(currentNote.noteDescription)
                         .font(.custom(RobotoFontConstants.RobotoRegular, size: 12, relativeTo: .body))
                 }
                 
@@ -54,13 +54,6 @@ struct NoteRowView: View, Identifiable  {
 
 
 
-#Preview {
-    ScrollView{
-        VStack(spacing: 16){
-            NoteRowView(noteLabel: "Закончить дизайн ToDo", noteDescription: "Создать экран регистрации / экраны главной страницы / профилля / отредактировать код / подключить API")
-            NoteRowView(noteLabel: "Закончить дизайн ToDo", noteDescription: "Создать экран регистрации / экраны главной страницы / профилля / отредактировать код / подключить API методы")
-            NoteRowView(noteLabel: "Закончить дизайн ToDo", noteDescription: "Создать экран регистрации / экраны главной страницы / профилля / отредактировать код / подключить API методы")
-            NoteRowView(noteLabel: "Закончить дизайн ToDo", noteDescription: "Создать экран регистрации / экраны главной страницы / профилля / отредактировать код / подключить API методы")
-        }
-    }
-}
+//#Preview {
+//   Text("text")
+//}
