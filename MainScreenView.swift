@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    @State var NotesList = [NoteRowView]()
     @EnvironmentObject private var vm: MainScreenViewModel
     
     var body: some View {
@@ -18,21 +17,17 @@ struct MainScreenView: View {
             List{
                 ForEach(vm.notesRowsRealmGroup.notesRowsRealm){ note in
                     NavigationLink {
-                        //Окно самой задачи
-                        VStack{
-                        }
-                        .navigationTitle(note.noteLabel)
-                        .navigationBarTitleDisplayMode(.inline)
+                        
+                        NoteView(currentNote: note)
+                
                     } label: {
-                        NoteRowView(noteLabel: note.noteLabel, noteDescription: note.noteDescription)
+                        NoteRowView(currentNote: note)
                     }
                     .foregroundStyle(.black)
                     
                 }
                 .onDelete { indexSet in
-                    
                     vm.deleteNote(vm.notesRowsRealmGroup.notesRowsRealm[indexSet.first!])
-                    
                 }
                 .listRowSeparator(.hidden)
                 .listRowInsets(EdgeInsets.init(top: 8, leading: 16, bottom: 8, trailing: 0))
@@ -40,11 +35,11 @@ struct MainScreenView: View {
             .navigationTitle(Text("MyNotes"))
             .navigationBarBackButtonHidden()
             .listStyle(.plain)
-            .toolbar(content: {
+            .toolbar {
                 Button(action: {
-                    alertTF(title: "Add new note",
+                    alertTF(title: "New note's label",
                             message: nil,
-                            hintText: "Note's name",
+                            hintText: "Note's label",
                             primaryTitle: "Add",
                             secondaryTitle: "Cancel",
                             primaryAction: { text in
@@ -55,7 +50,7 @@ struct MainScreenView: View {
                        label: {
                     Image(systemName: "plus.circle")
                 })
-            })
+            }
         }
         
     }

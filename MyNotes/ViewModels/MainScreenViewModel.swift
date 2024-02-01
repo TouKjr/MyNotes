@@ -28,10 +28,7 @@ class MainScreenViewModel: ObservableObject{
         let newTask = NoteRowRealm(value: ["id":"\(UUID().uuidString)","noteLabel": "\(noteText)", "noteDescription": ""])
         
         $notesRowsRealmGroup.notesRowsRealm.append(newTask)
-        
-        
-        
-    
+
     }
     
     func deleteNote(_ DeletedNote: NoteRowRealm){
