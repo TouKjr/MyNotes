@@ -23,8 +23,8 @@ struct NoteView: View {
             Button(action: {
                 alertTF(title: "New note's label",
                         message: nil,
-                        hintText: "Note's name",
-                        primaryTitle: "Add",
+                        hintText: "Note's label",
+                        primaryTitle: "Edit",
                         secondaryTitle: "Cancel",
                         primaryAction: { text in
                     currentNote.noteLabel = text

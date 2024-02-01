@@ -39,9 +39,9 @@ struct MainScreenView: View {
             .listStyle(.plain)
             .toolbar {
                 Button(action: {
-                    alertTF(title: "Add new note",
+                    alertTF(title: "New note's label",
                             message: nil,
-                            hintText: "Note's name",
+                            hintText: "Note's label",
                             primaryTitle: "Add",
                             secondaryTitle: "Cancel",
                             primaryAction: { text in
