@@ -9,11 +9,14 @@ import SwiftUI
 
 struct MainScreenView: View {
     @State var NotesList = [NoteRowView]()
+    @EnvironmentObject private var vm: MainScreenViewModel
+    
     var body: some View {
+        
         NavigationView{
             
             List{
-                ForEach(NotesList){ note in
+                ForEach(vm.notesRowsRealmGroup.notesRowsRealm){ note in
                     NavigationLink {
                         //Окно самой задачи
                         VStack{
@@ -28,10 +31,8 @@ struct MainScreenView: View {
                 }
                 .onDelete { indexSet in
                     
-                    print(indexSet)
-                    print(indexSet.first!)
+                    vm.deleteNote(vm.notesRowsRealmGroup.notesRowsRealm[indexSet.first!])
                     
-                    NotesList.remove(atOffsets: indexSet)
                 }
                 .listRowSeparator(.hidden)
                 .listRowInsets(EdgeInsets.init(top: 8, leading: 16, bottom: 8, trailing: 0))
@@ -41,8 +42,17 @@ struct MainScreenView: View {
             .listStyle(.plain)
             .toolbar(content: {
                 Button(action: {
-                    NotesList.append(NoteRowView(noteLabel: "UITest", noteDescription: "Swipe left to delete"))
-                }, label: {
+                    alertTF(title: "Add new note",
+                            message: nil,
+                            hintText: "Note's name",
+                            primaryTitle: "Add",
+                            secondaryTitle: "Cancel",
+                            primaryAction: { text in
+                        vm.addNote(noteText: text)
+                    },
+                            secondaryAction: {})
+                },
+                       label: {
                     Image(systemName: "plus.circle")
                 })
             })
@@ -53,4 +63,5 @@ struct MainScreenView: View {
 
 #Preview {
     MainScreenView()
+        .environmentObject(MainScreenViewModel())
 }
