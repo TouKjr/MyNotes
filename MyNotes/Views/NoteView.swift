@@ -21,13 +21,18 @@ struct NoteView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button(action: {
-                alertTF(title: "New note's label",
+                alertTF(title: "New label",
                         message: nil,
                         hintText: "Note's label",
                         primaryTitle: "Edit",
                         secondaryTitle: "Cancel",
                         primaryAction: { text in
-                    currentNote.noteLabel = text
+                    
+                    let realm = try! Realm()
+                    try! realm.write {
+                        currentNote.thaw()?.noteLabel = text
+                        
+                    }
                 },
                         secondaryAction: {}
                 )
@@ -37,6 +42,7 @@ struct NoteView: View {
             })
         }
     }
+    
 }
 
 #Preview {
