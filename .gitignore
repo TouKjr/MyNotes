@@ -1,0 +1,7 @@
+.DS_Store
+
+### Xcode ###
+## User settings
+xcuserdata/
+
+MyNotes.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
