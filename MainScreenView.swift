@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    
     @EnvironmentObject private var vm: MainScreenViewModel
     
     var body: some View {
@@ -29,7 +28,6 @@ struct MainScreenView: View {
                 }
                 .onDelete { indexSet in
                     vm.deleteNote(vm.notesRowsRealmGroup.notesRowsRealm[indexSet.first!])
-                    
                 }
                 .listRowSeparator(.hidden)
                 .listRowInsets(EdgeInsets.init(top: 8, leading: 16, bottom: 8, trailing: 0))
