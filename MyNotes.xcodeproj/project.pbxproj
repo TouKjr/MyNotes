@@ -8,17 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		25A3B4CF2B6B8EAF003D31C1 /* MyNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B4CE2B6B8EAF003D31C1 /* MyNotesApp.swift */; };
-		25A3B4D12B6B8EAF003D31C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B4D02B6B8EAF003D31C1 /* ContentView.swift */; };
 		25A3B4D32B6B8EB1003D31C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4D22B6B8EB1003D31C1 /* Assets.xcassets */; };
 		25A3B4D62B6B8EB1003D31C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4D52B6B8EB1003D31C1 /* Preview Assets.xcassets */; };
+		25A3B4E02B6B934E003D31C1 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B4DF2B6B934E003D31C1 /* MainScreenView.swift */; };
+		25A3B4E22B6B9372003D31C1 /* NoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B4E12B6B9372003D31C1 /* NoteRowView.swift */; };
+		25A3B4E52B6B93DC003D31C1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 25A3B4E42B6B93DC003D31C1 /* Realm */; };
+		25A3B4E72B6B93DC003D31C1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 25A3B4E62B6B93DC003D31C1 /* RealmSwift */; };
+		25A3B4F92B6B9C04003D31C1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4EC2B6B9C04003D31C1 /* Roboto-Medium.ttf */; };
+		25A3B4FA2B6B9C04003D31C1 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4ED2B6B9C04003D31C1 /* Roboto-Light.ttf */; };
+		25A3B4FB2B6B9C04003D31C1 /* RobotoFontConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B4EE2B6B9C04003D31C1 /* RobotoFontConstants.swift */; };
+		25A3B4FC2B6B9C04003D31C1 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4EF2B6B9C04003D31C1 /* Roboto-Regular.ttf */; };
+		25A3B4FD2B6B9C04003D31C1 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F02B6B9C04003D31C1 /* Roboto-MediumItalic.ttf */; };
+		25A3B4FE2B6B9C04003D31C1 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F12B6B9C04003D31C1 /* Roboto-ThinItalic.ttf */; };
+		25A3B4FF2B6B9C04003D31C1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F22B6B9C04003D31C1 /* Roboto-BoldItalic.ttf */; };
+		25A3B5002B6B9C04003D31C1 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F32B6B9C04003D31C1 /* Roboto-LightItalic.ttf */; };
+		25A3B5012B6B9C04003D31C1 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F42B6B9C04003D31C1 /* Roboto-Italic.ttf */; };
+		25A3B5022B6B9C04003D31C1 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F52B6B9C04003D31C1 /* Roboto-BlackItalic.ttf */; };
+		25A3B5032B6B9C04003D31C1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F62B6B9C04003D31C1 /* Roboto-Bold.ttf */; };
+		25A3B5042B6B9C04003D31C1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F72B6B9C04003D31C1 /* Roboto-Thin.ttf */; };
+		25A3B5052B6B9C04003D31C1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A3B4F82B6B9C04003D31C1 /* Roboto-Black.ttf */; };
+		25A3B5082B6BA2B4003D31C1 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A3B5072B6BA2B4003D31C1 /* MainScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25A3B4CB2B6B8EAF003D31C1 /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A3B4CE2B6B8EAF003D31C1 /* MyNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesApp.swift; sourceTree = "<group>"; };
-		25A3B4D02B6B8EAF003D31C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25A3B4D22B6B8EB1003D31C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25A3B4D52B6B8EB1003D31C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25A3B4DF2B6B934E003D31C1 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = SOURCE_ROOT; };
+		25A3B4E12B6B9372003D31C1 /* NoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowView.swift; sourceTree = "<group>"; };
+		25A3B4EC2B6B9C04003D31C1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		25A3B4ED2B6B9C04003D31C1 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		25A3B4EE2B6B9C04003D31C1 /* RobotoFontConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotoFontConstants.swift; sourceTree = "<group>"; };
+		25A3B4EF2B6B9C04003D31C1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		25A3B4F02B6B9C04003D31C1 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		25A3B4F12B6B9C04003D31C1 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		25A3B4F22B6B9C04003D31C1 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		25A3B4F32B6B9C04003D31C1 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		25A3B4F42B6B9C04003D31C1 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		25A3B4F52B6B9C04003D31C1 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		25A3B4F62B6B9C04003D31C1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		25A3B4F72B6B9C04003D31C1 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		25A3B4F82B6B9C04003D31C1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		25A3B5062B6B9D3C003D31C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		25A3B5072B6BA2B4003D31C1 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A3B4E72B6B93DC003D31C1 /* RealmSwift in Frameworks */,
+				25A3B4E52B6B93DC003D31C1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +86,12 @@
 		25A3B4CD2B6B8EAF003D31C1 /* MyNotes */ = {
 			isa = PBXGroup;
 			children = (
+				25A3B5062B6B9D3C003D31C1 /* Info.plist */,
+				25A3B4E82B6B9A8E003D31C1 /* Fonts */,
+				25A3B4DE2B6B92F7003D31C1 /* ViewModels */,
+				25A3B4DD2B6B92F1003D31C1 /* Views */,
+				25A3B4DC2B6B92E9003D31C1 /* Models */,
 				25A3B4CE2B6B8EAF003D31C1 /* MyNotesApp.swift */,
-				25A3B4D02B6B8EAF003D31C1 /* ContentView.swift */,
 				25A3B4D22B6B8EB1003D31C1 /* Assets.xcassets */,
 				25A3B4D42B6B8EB1003D31C1 /* Preview Content */,
 			);
@@ -65,6 +104,66 @@
 				25A3B4D52B6B8EB1003D31C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25A3B4DC2B6B92E9003D31C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25A3B5092B6BA2CE003D31C1 /* Realm */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25A3B4DD2B6B92F1003D31C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25A3B4DF2B6B934E003D31C1 /* MainScreenView.swift */,
+				25A3B4E12B6B9372003D31C1 /* NoteRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25A3B4DE2B6B92F7003D31C1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				25A3B5072B6BA2B4003D31C1 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		25A3B4E82B6B9A8E003D31C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				25A3B4EB2B6B9C04003D31C1 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		25A3B4EB2B6B9C04003D31C1 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				25A3B4EC2B6B9C04003D31C1 /* Roboto-Medium.ttf */,
+				25A3B4ED2B6B9C04003D31C1 /* Roboto-Light.ttf */,
+				25A3B4EE2B6B9C04003D31C1 /* RobotoFontConstants.swift */,
+				25A3B4EF2B6B9C04003D31C1 /* Roboto-Regular.ttf */,
+				25A3B4F02B6B9C04003D31C1 /* Roboto-MediumItalic.ttf */,
+				25A3B4F12B6B9C04003D31C1 /* Roboto-ThinItalic.ttf */,
+				25A3B4F22B6B9C04003D31C1 /* Roboto-BoldItalic.ttf */,
+				25A3B4F32B6B9C04003D31C1 /* Roboto-LightItalic.ttf */,
+				25A3B4F42B6B9C04003D31C1 /* Roboto-Italic.ttf */,
+				25A3B4F52B6B9C04003D31C1 /* Roboto-BlackItalic.ttf */,
+				25A3B4F62B6B9C04003D31C1 /* Roboto-Bold.ttf */,
+				25A3B4F72B6B9C04003D31C1 /* Roboto-Thin.ttf */,
+				25A3B4F82B6B9C04003D31C1 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		25A3B5092B6BA2CE003D31C1 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +182,10 @@
 			dependencies = (
 			);
 			name = MyNotes;
+			packageProductDependencies = (
+				25A3B4E42B6B93DC003D31C1 /* Realm */,
+				25A3B4E62B6B93DC003D31C1 /* RealmSwift */,
+			);
 			productName = MyNotes;
 			productReference = 25A3B4CB2B6B8EAF003D31C1 /* MyNotes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +214,9 @@
 				Base,
 			);
 			mainGroup = 25A3B4C22B6B8EAF003D31C1;
+			packageReferences = (
+				25A3B4E32B6B93DC003D31C1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 25A3B4CC2B6B8EAF003D31C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +233,18 @@
 			files = (
 				25A3B4D62B6B8EB1003D31C1 /* Preview Assets.xcassets in Resources */,
 				25A3B4D32B6B8EB1003D31C1 /* Assets.xcassets in Resources */,
+				25A3B5032B6B9C04003D31C1 /* Roboto-Bold.ttf in Resources */,
+				25A3B4FF2B6B9C04003D31C1 /* Roboto-BoldItalic.ttf in Resources */,
+				25A3B4FC2B6B9C04003D31C1 /* Roboto-Regular.ttf in Resources */,
+				25A3B4FE2B6B9C04003D31C1 /* Roboto-ThinItalic.ttf in Resources */,
+				25A3B5002B6B9C04003D31C1 /* Roboto-LightItalic.ttf in Resources */,
+				25A3B5022B6B9C04003D31C1 /* Roboto-BlackItalic.ttf in Resources */,
+				25A3B4FA2B6B9C04003D31C1 /* Roboto-Light.ttf in Resources */,
+				25A3B5012B6B9C04003D31C1 /* Roboto-Italic.ttf in Resources */,
+				25A3B4FD2B6B9C04003D31C1 /* Roboto-MediumItalic.ttf in Resources */,
+				25A3B5052B6B9C04003D31C1 /* Roboto-Black.ttf in Resources */,
+				25A3B5042B6B9C04003D31C1 /* Roboto-Thin.ttf in Resources */,
+				25A3B4F92B6B9C04003D31C1 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A3B4D12B6B8EAF003D31C1 /* ContentView.swift in Sources */,
+				25A3B4FB2B6B9C04003D31C1 /* RobotoFontConstants.swift in Sources */,
+				25A3B4E22B6B9372003D31C1 /* NoteRowView.swift in Sources */,
+				25A3B4E02B6B934E003D31C1 /* MainScreenView.swift in Sources */,
 				25A3B4CF2B6B8EAF003D31C1 /* MyNotesApp.swift in Sources */,
+				25A3B5082B6BA2B4003D31C1 /* MainScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +396,12 @@
 				DEVELOPMENT_TEAM = G4TX2LAQ95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNotes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +426,12 @@
 				DEVELOPMENT_TEAM = G4TX2LAQ95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNotes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +467,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25A3B4E32B6B93DC003D31C1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.46.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25A3B4E42B6B93DC003D31C1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25A3B4E32B6B93DC003D31C1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		25A3B4E62B6B93DC003D31C1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25A3B4E32B6B93DC003D31C1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25A3B4C32B6B8EAF003D31C1 /* Project object */;
 }
